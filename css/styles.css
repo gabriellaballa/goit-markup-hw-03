@@ -1,5 +1,6 @@
 :root {
   --interactiv-color: #2196f3;
+  --ourteam-background-color: #f5f4fa;
 }
 body {
   color: #212121;
@@ -125,7 +126,15 @@ figure > figcaption {
   letter-spacing: 0.03em;
   color: #212121;
 }
+.ourteam-section {
+  background-color: var(--ourteam-background-color);
+}
 
+.control li,
+.whatwedo-container,
+.container-members {
+  list-style-type: none;
+}
 /*style portfolio  */
 .button-portfolio {
   background-color: #f5f4fa;
