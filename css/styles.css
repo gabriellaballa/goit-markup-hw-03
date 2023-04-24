@@ -6,7 +6,11 @@ body {
   color: #212121;
   font-family: "Roboto", "Helvetica now", "Proxima Nova";
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 a:hover {
   color: var(--interactiv-color);
 }
@@ -22,6 +26,7 @@ button:hover {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin: 0 93px 0 215px;
 }
 
 .blue-logo {
@@ -134,6 +139,23 @@ figure > figcaption {
 .whatwedo-container,
 .container-members {
   list-style-type: none;
+}
+.header-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.control li {
+  display: inline-block;
+  padding: 0 50px;
+}
+.contacts {
+  display: flex;
+  margin-right: 215px;
+}
+.contacts a {
+  padding: 32px 40px;
 }
 /*style portfolio  */
 .button-portfolio {
