@@ -10,7 +10,11 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* ode berakni az 1200as pixelt*/
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
 a:hover {
   color: var(--interactiv-color);
 }
@@ -26,7 +30,6 @@ button:hover {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin: 0 93px 0 215px;
 }
 
 .blue-logo {
@@ -140,23 +143,29 @@ figure > figcaption {
 .container-members {
   list-style-type: none;
 }
+/* elhelyezzuk vizszintes egyenes vonalba a header elemeit*/
 .header-flexbox {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
+}
+.control {
+  display: flex;
 }
 
-.control li {
-  display: inline-block;
-  padding: 0 50px;
+.control li a {
+  margin: 0 50px;
 }
 .contacts {
   display: flex;
-  margin-right: 215px;
 }
 .contacts a {
-  padding: 32px 40px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px;
 }
+
 /*style portfolio  */
 .button-portfolio {
   background-color: #f5f4fa;
