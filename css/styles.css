@@ -201,6 +201,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 32px 215px;
+  align-items: center;
 }
 .nav-flexbox .control {
   display: flex;
