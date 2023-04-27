@@ -25,12 +25,14 @@
   </head>
   <body>
     <header class="header-flexbox">
-      <a class="logo" href="/index.html"
-        ><span class="blue-logo">Web</span
-        ><span class="black-logo">Studio</span></a
-      >
       <nav class="nav-flexbox">
         <ul class="control">
+          <li>
+            <a class="logo" href="/index.html"
+              ><span class="blue-logo">Web</span
+              ><span class="black-logo">Studio</span></a
+            >
+          </li>
           <li>
             <a
               href="/index.html"
@@ -58,146 +60,172 @@
         </ul>
       </nav>
       <div class="contacts">
-        <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="tel" href="tel:+1212-772-4150">+1212-772-4150</a>
+        <ul class="index-info">
+          <li>
+            <a class="mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a class="tel" href="tel:+1212-772-4150">+1212-772-4150</a></li>
+        </ul>
       </div>
     </header>
     <main>
       <div class="title-container">
-        <h1 class="title-index">EFFECTIVE SOLUTIONS FOR</h1>
-        <br />
-        <h1 class="title-index">YOUR BUSINESS</h1>
-        <button class="button-request" type="button">
-          Request our service
-        </button>
+        <div class="index-no-margin">
+          <h1 class="title-index">EFFECTIVE SOLUTIONS FOR</h1>
+          <h1 class="title-index">YOUR BUSINESS</h1>
+        </div>
+        <div class="index-button">
+          <button class="button-request" type="button">
+            Request our service
+          </button>
+        </div>
       </div>
-      <dl class="whatwedo">
-        <dt><b>ATTENTION TO DETAILS</b></dt>
-        <dd>
-          We go into all the details and processes of your business to develop a
-          customized solution.
-        </dd>
-        <dt><b>PUNCTUALITY</b></dt>
-        <dd>
-          With us, you can feel safe and secure. An important principle of the
-          company: respect your time and deadlines.
-        </dd>
-        <dt><b>PLANNING</b></dt>
-        <dd>
-          You will be able to observe and participate in every phase of solution
-          development and implementation.
-        </dd>
-        <dt><b>MODERN TECHNOLOGIES</b></dt>
-        <dd>
-          We use innovative tools to solve assigned tasks. It's time to simplify
-          work processes.
-        </dd>
-      </dl>
-      <figure>
-        <figcaption><h2>What we do</h2></figcaption>
-        <ul class="whatwedo-container">
-          <li>
-            <img
-              src="images/1picture.jpg"
-              alt="Firts Picture-We go into all the details"
-              width="370"
-              height="298"
-            />
-          </li>
-          <li>
-            <img
-              src="images/2picture.jpg"
-              alt="Second Picture-Punctuality"
-              width="370"
-              height="298"
-            />
-          </li>
-          <li>
-            <img
-              src="images/3picture.jpg"
-              alt="Third picture-We use innovative tools"
-              width="370"
-              height="298"
-            />
-          </li>
-        </ul>
-      </figure>
-      <div class="ourteam-section">
-        <h2>Our team</h2>
-        <div class="Ourteam_pictures">
-          <ul class="container-members">
+      <article>
+        <div class="whatwedo">
+          <div>
+            <dt><b>ATTENTION TO DETAILS</b></dt>
+            <dd>
+              We go into all the details and processes <br />
+              of your business to develop a <br />
+              customized solution.
+            </dd>
+          </div>
+          <div>
+            <dt><b>PUNCTUALITY</b></dt>
+            <dd>
+              With us, you can feel safe and secure. <br />
+              An important principle of the company: <br />
+              respect your time and deadlines.
+            </dd>
+          </div>
+          <div>
+            <dt><b>PLANNING</b></dt>
+            <dd>
+              You will be able to observe and <br />
+              participate in every phase of solution <br />
+              development and implementation.
+            </dd>
+          </div>
+          <div>
+            <dt><b>MODERN TECHNOLOGIES</b></dt>
+            <dd>
+              We use innovative tools to solve <br />
+              assigned tasks. It's time to simplify work <br />
+              processes.
+            </dd>
+          </div>
+        </div>
+      </article>
+      <section class="index-whatwedo">
+        <div class="whatwedo-section">
+          <h2>What we do</h2>
+          <ul class="whatwedo-container">
             <li>
-              <figure>
-                <img
-                  src="images/walker.jpg"
-                  alt="Christopher Walker"
-                  width="270"
-                  height="260"
-                />
-                <figcaption>
-                  <b>Christopher Walker</b>
-                  <h6>Product Designer</h6>
-                </figcaption>
-              </figure>
+              <img
+                src="images/1picture.jpg"
+                alt="Firts Picture-We go into all the details"
+                width="370"
+                height="298"
+              />
             </li>
             <li>
-              <figure>
-                <img
-                  src="images/evans.jpg"
-                  alt="Kylie Evans"
-                  width="270"
-                  height="260"
-                />
-                <figcaption>
-                  <b>Kylie Evans</b>
-                  <h6>Frontend Developer</h6>
-                </figcaption>
-              </figure>
+              <img
+                src="images/2picture.jpg"
+                alt="Second Picture-Punctuality"
+                width="370"
+                height="298"
+              />
             </li>
             <li>
-              <figure>
-                <img
-                  src="images/harris.jpg"
-                  alt="Ryan Harris"
-                  width="270"
-                  height="260"
-                />
-                <figcaption>
-                  <b>Ryan Harris</b>
-                  <h6>Marketing</h6>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img
-                  src="images/moore.jpg"
-                  alt="Tyler Moore"
-                  width="270"
-                  height="260"
-                />
-                <figcaption>
-                  <b>Tyler Moore</b>
-                  <h6>UI Designer</h6>
-                </figcaption>
-              </figure>
+              <img
+                src="images/3picture.jpg"
+                alt="Third picture-We use innovative tools"
+                width="370"
+                height="298"
+              />
             </li>
           </ul>
+        </div>
+      </section>
+
+      <div class="index-ourteam">
+        <div class="ourteam-section">
+          <h2>Our team</h2>
+          <div class="ourteam_pictures">
+            <div>
+              <img
+                src="images/walker.jpg"
+                alt="Christopher Walker"
+                width="270"
+                height="260"
+              />
+
+              <div class="img-description">
+                <b class="ourteam-name">Christopher Walker</b>
+                <h6 class="index-job">Product Designer</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/evans.jpg"
+                alt="Kylie Evans"
+                width="270"
+                height="260"
+              />
+              <div class="img-description">
+                <b class="ourteam-name">Kylie Evans</b>
+                <h6 class="index-job">Frontend Developer</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/harris.jpg"
+                alt="Ryan Harris"
+                width="270"
+                height="260"
+              />
+              <div class="img-description">
+                <b class="ourteam-name">Ryan Harris</b>
+                <h6 class="index-job">Marketing</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="images/moore.jpg"
+                alt="Tyler Moore"
+                width="270"
+                height="260"
+              />
+              <div class="img-description">
+                <b class="ourteam-name">Tyler Moore</b>
+                <h6 class="index-job">UI Designer</h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <a class="logo" href="/index.html"
-        ><span class="blue-logo">Web</span
-        ><span class="black-logo">Studio</span></a
-      >
-
-      <div>
-        <address class="address">695 Park Ave, NY 10065, USA</address>
-        <a class="mail-bottom" href="mailto:info@devstudio.com" target="_blank"
-          >info@devstudio.com</a
+      <div class="index-dim">
+        <a class="logo-bottom" href="/index.html"
+          ><span class="blue-logo">Web</span
+          ><span class="white-logo">Studio</span></a
         >
-        <a class="tel-bottom" href="tel:+1212-772-4150">+1212-772-4150</a>
+
+        <div>
+          <address class="address">695 Park Ave, NY 10065, USA</address>
+          <div class="info-bottom">
+            <a
+              class="mail-bottom"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              >info@devstudio.com</a
+            >
+            <a class="tel-bottom" href="tel:+1212-772-4150">+1212-772-4150</a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

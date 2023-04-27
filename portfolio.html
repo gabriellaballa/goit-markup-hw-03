@@ -14,17 +14,23 @@
       rel="stylesheet"
       href="https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
-      <nav>
-        <a class="logo" href="/index.html"
-          ><span class="blue-logo">Web</span
-          ><span class="black-logo">Studio</span></a
-        >
-        <!--Is this a logo or just a text format?-->
+    <header class="header-flexbox">
+      <nav class="nav-flexbox">
         <ul class="control">
+          <li>
+            <a class="logo" href="/index.html"
+              ><span class="blue-logo">Web</span
+              ><span class="black-logo">Studio</span></a
+            >
+          </li>
           <li>
             <a
               href="/index.html"
@@ -51,162 +57,175 @@
           </li>
         </ul>
       </nav>
-      <a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a class="tel" href="tel:+1212-772-4150">+1212-772-4150</a>
+
+      <div class="contacts">
+        <ul class="index-info">
+          <li>
+            <a class="mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li><a class="tel" href="tel:+1212-772-4150">+1212-772-4150</a></li>
+        </ul>
+      </div>
     </header>
     <main>
-      <ul class="buttons">
-        <li><button class="button-portfolio" type="button">All</button></li>
-        <li>
-          <button class="button-portfolio" type="button">Web-sites</button>
-        </li>
-        <li><button class="button-portfolio" type="button">Apps</button></li>
-        <li><button class="button-portfolio" type="button">Design</button></li>
-        <li>
-          <button class="button-portfolio" type="button">Marketing</button>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <figure>
-            <img
-              src="/images/technoduck.jpg"
-              alt="Technoduck"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Technoduck</b>
-              <h6 class="project-category">Web-site</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/neworlean.jpg"
-              alt="Poster New Orlean vs Golden Star"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Poster New Orlean vs Golden Star</b>
-              <h6 class="project-category">Design</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/seafood.jpg"
-              alt="Seafood Restaurant"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Seafood Restaurant</b>
-              <h6 class="project-category">Apps</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/projectprime.jpg"
-              alt="Project Prime"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Project Prime</b>
-              <h6 class="project-category">Marketing</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/boxes.jpg"
-              alt="Project Boxes"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Project Boxes</b>
-              <h6 class="project-category">Apps</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/inspiration.jpg"
-              alt="Inspiration has no Borders"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Inspiration has no Borders</b>
-              <h6 class="project-category">Web-site</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/limitededition.jpg"
-              alt="Limited Edition"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Limited Edition</b>
-              <h6 class="project-category">Design</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/projectlab.jpg"
-              alt="Project LAB"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Project LAB</b>
-              <h6 class="project-category">Marketing</h6>
-            </figcaption>
-          </figure>
-        </li>
-        <li>
-          <figure>
-            <img
-              src="/images/business.jpg"
-              alt="Growing Business"
-              width="370"
-              height="294"
-            />
-            <figcaption>
-              <b class="project-name">Growing Business</b>
-              <h6 class="project-category">Apps</h6>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
+      <span class="border">-</span>
+
+      <section class="btns">
+        <div class="container">
+          <ul class="buttons">
+            <li><button class="button-portfolio" type="button">All</button></li>
+            <li>
+              <button class="button-portfolio" type="button">Web-sites</button>
+            </li>
+            <li>
+              <button class="button-portfolio" type="button">Apps</button>
+            </li>
+            <li>
+              <button class="button-portfolio" type="button">Design</button>
+            </li>
+            <li>
+              <button class="button-portfolio" type="button">Marketing</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <div class="img-container">
+            <div>
+              <img
+                src="/images/technoduck.jpg"
+                alt="Technoduck"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Technoduck</b>
+                <h6 class="project-category">Web-site</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/neworlean.jpg"
+                alt="neworlean"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Poster New Orlean vs Golden Star</b>
+                <h6 class="project-category">Design</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/seafood.jpg"
+                alt="Seafood Restaurant"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Seafood Restaurant</b>
+                <h6 class="project-category">Apps</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/projectprime.jpg"
+                alt="Project Prime"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Project Prime</b>
+                <h6 class="project-category">Marketing</h6>
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="/images/boxes.jpg"
+                alt="Project Boxes"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Project Boxes</b>
+                <h6 class="project-category">Apps</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/inspiration.jpg"
+                alt="Inspiration has no Borders"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Inspiration has no Borders</b>
+                <h6 class="project-category">Web-site</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/limitededition.jpg"
+                alt="Limited Edition"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Limited Edition</b>
+                <h6 class="project-category">Design</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/projectlab.jpg"
+                alt="Project LAB"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Project LAB</b>
+                <h6 class="project-category">Marketing</h6>
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/business.jpg"
+                alt="Growing Business"
+                width="370"
+                height="294"
+              />
+              <div class="box-info">
+                <b class="project-name">Growing Business</b>
+                <h6 class="project-category">Apps</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-      <a class="logo" href="#WebStudio"
-        ><span class="blue-logo">Web</span
-        ><span class="black-logo">Studio</span></a
-      >
-
-      <div>
-        <address class="address">695 Park Ave, NY 10065, USA</address>
-        <a class="mail-bottom" href="mailto:info@devstudio.com" target="_blank"
-          >info@devstudio.com</a
+      <div class="index-dim">
+        <a class="logo-bottom" href="#WebStudio"
+          ><span class="blue-logo">Web</span
+          ><span class="white-logo">Studio</span></a
         >
-        <a class="tel-bottom" href="tel:+1212-772-4150">+1212-772-4150</a>
+
+        <div>
+          <address class="address">695 Park Ave, NY 10065, USA</address>
+          <div class="info-bottom">
+            <a
+              class="mail-bottom"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              >info@devstudio.com</a
+            >
+            <a class="tel-bottom" href="tel:+1212-772-4150">+1212-772-4150</a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
